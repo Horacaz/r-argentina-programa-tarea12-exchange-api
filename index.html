@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <script src="./src/index.js" defer></script>    
+    <title>Exchange Rates API - r-argentinaPrograma-clase12</title>
+</head>
+<body>
+<div class="left">
+    <h1 class="title">Exchange Rates API</h1>
+</div>
+ <div class="right">
+     <div class="exchange-panel">
+        <input type="number" placeholder="100" id="base-amount">
+         <select class="base-currency">
+             <option>Select base currency</option>
+         </select>
+
+        <input type="number" placeholder="100" id='results'>
+        <select class="target-currency">
+            <option>Select target currency</option>
+        </select>
+     </div>
+ </div>
+ <div class="currency-rates">
+     <p>Exchange rate for <span id="base-currency"></span> as of <span id="current-date"></span>.</p>
+     <table id="currency-table">
+        <tr>
+            <th id='table-currency-code-title'>Currency Code</th>
+            <th id='table-currency-name-title'>Currency Name</th>
+            <th id='table-currency-rate-title'>Conversion Rate</th>
+        </tr>
+    </table>
+ </div>
+</body>
+</html>
